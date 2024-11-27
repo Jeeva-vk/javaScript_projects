@@ -1,0 +1,20 @@
+body{
+    background-color: aqua;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+}
+ div{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    
+}
+h1{
+    color: black;
+    background-color: bisque;
+   flex-basis: 25%;
+   margin: 5px;
+}     

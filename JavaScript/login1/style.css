@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 50px;
+   display: flex;
+   justify-content: space-between;
+}
+.logo{
+   font-size: 2em;
+   color: #fff;
+   user-select: none;
+}
+.navigation a{
+   position: relative;
+   color: #fff;
+   font-size: 1.1em;
+   text-decoration: none;
+   font-weight: 600;
+   margin-left: 30px;
+}
+.navigation a::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: #fff;
+   border-radius: 1px;
+   bottom: -6px;
+   transform: scaleX(0);
+   transform-origin: top;
+   transition: transform .5s;
+}
+.navigation a:hover::after{
+   transform: scaleX(1);
+}
+.navigation .pop-up{
+   background: transparent;
+   width: 100px;
+   height: 35px;
+   margin-left: 10px;
+   color: #fff;
+   border: none;
+   border: 2px solid #fff;
+   outline: none;
+   border-radius: 20px;
+   font-size: 1.1em;
+   font-weight: 600;
+   transition: .5s;
+}
+.navigation .pop-up:hover{
+   background-color: rgb(4, 82, 86);
+   color: #fff;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: url('space.img') no-repeat;
+   background-size: cover;
+   background-position: center;
+
+
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('space.img');
+    background-size: cover;
+    background-position: center;
+} */
+.wrapper{
+    width: 420px;
+    height: 420px;
+    background:transparent;
+    color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+.wrapper .form-box-login{
+   /* display: none; */
+}
+.wrapper .form-box-reg{
+   width: auto;
+   height: max-content;
+     /* position: absolute;
+   transform: translateX(400px);  
+   display:  ;  */
+}
+.wrapper .icon-close{
+   position: absolute;
+   top: 0;
+   right : 0;
+   width: 45px;
+   height: 45px;
+   background-color: aqua;
+   font-size:  2em;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom-left-radius: 20px;
+   cursor: pointer;
+   z-index: 1;
+}
+.wrapper .remember-forgot-1{
+   display: flex;
+   justify-content: space-between;
+   font-size: 15px;
+   margin: -15px 0 15px;
+}
+
+.remember-forgot-1{
+   display: flex;
+   justify-content: center;
+}
+.remember-forgot-1 label {
+   display: inline-flex;
+   align-items: center;
+   white-space: nowrap;
+}
+
+.remember-forgot-1 input[type="checkbox"] {
+   margin-right: 8px; /* Adjust this value to control the space between the checkbox and the text */
+}
+
+.remember-forgot-1 label input{
+   accent-color: #fff;
+   margin-right: 3px;
+}
+.ip-box-reg{
+   display: flex;
+}
+.wrapper h1{
+    font-size: 35px;
+    text-align: center;
+}
+.wrapper .input-box{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 30px 0 ;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+
+ .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+ }
+ .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    margin: -15px 0 15px;
+ }
+ .remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+ }
+ .remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+ }
+ .remember-forgot a:hover{
+    text-decoration: underline;
+ }
+ 
+ .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 17px;
+    color: #201b1b;
+    font-weight: 600;
+} 
+
+.wrapper .btn:hover{
+   background-color: rgb(106, 11, 179);
+}
+
+.wrapper .btn:active{
+   background-color: rgb(58, 129, 199);
+}
+ .wrapper .register-link{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+ }
+ .register-link a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+ }
+ .register-link a:hover{
+    text-decoration: underline;
+ }

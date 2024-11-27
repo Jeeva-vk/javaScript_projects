@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an awesum website">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="bk-container">
+            <h2>Soorarai Pottru</h2>
+            <h5>Sudha Kongara</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga in, porro commodi provident laboriosam veritatis explicabo, aliquid tenetur expedita tempore quae, alias enim numquam perspiciatis. Est fuga quis repellendus!</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+
+
+    <div class="popupoverlay"></div>
+
+
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form >
+            <input type="text" placeholder="Book Title" id="bk-title-ip">
+            <input type="text" placeholder="Book Author" id="bk-author-ip">
+            <textarea placeholder="Short Description" id="bk-desc-ip"></textarea>
+            <button id="add-bk">Add</button>
+            <button id="cancel-bk">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-btn" id="popup" >+</button>
+    <script src="script.js"></script>
+</body>
+</html>
